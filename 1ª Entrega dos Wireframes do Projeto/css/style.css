@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html {
+  background-color: lightblue;
+}
+
+body {
+  background-color: white;
+  width: 1500px;
+  margin: 10px auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th, td {
+  border: solid 2px blue;
+}
+
+img {
+    border: solid 2px blue;
+    margin: 10px;
+}
