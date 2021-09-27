@@ -1,0 +1,3 @@
+1 - Todas as páginas precisam ter um layout único, ou seja, não podem seguir o fluxo natural do documento, precisam ter suas partes posicionadas pelo css e o layout não pode ser repetido de outra página.
+
+2 - É necessário indicar as imagens de cada página com seu número e nome (ex.: 1.0 Home Page ; 1.1 A Música na Nossa História)
