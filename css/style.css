@@ -1,39 +1,82 @@
 @charset "UTF-8";
 
-#menu {
-  width: auto;
-  height: auto;
+html {
+  background-color: rgb(28, 25, 25);
+}
+
+body {
   background-color: white;
+  width: 1140px;
+  height: auto;
+  margin: 0px auto 0px auto;
+}
+
+#menu {
+  position: relative;
+  top: -80px;
   padding: 10px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.linha_menu{
+  display: inherit;
 }
 
 .button {
   width: 200px;
+  height: 40px;
+  color: rgb(241, 239, 229);
   font-family: verdana, arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 0.9em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-left: solid 1px blue;
-  border-bottom: solid 1px blue;
+  background: rgba(28, 25, 25, 0.8);
   border-radius: 10px;
-  margin-right: 50px;
+  margin-right: 20px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
 }
 
 .button0 {
-  background: lightgray;
+  border-right: solid 3px rgba(219, 0, 255, 0.37);
+  border-bottom: solid 3px rgba(219, 0, 255, 0.37);
 }
 
 .button1 {
-  background: lightblue;
+  border-right: solid 3px rgba(0, 255, 56, 0.37);
+  border-bottom: solid 3px rgba(0, 255, 56, 0.37);
 }
 
 .button2 {
-  background: lightyellow;
+  border-right: solid 3px rgba(0, 194, 255, 0.37);
+  border-bottom: solid 3px rgba(0, 194, 255, 0.37);
 }
 
 .button3 {
-  background: lightgreen;
+  border-right: solid 3px rgba(219, 255, 0, 0.37);
+  border-bottom: solid 3px rgba(219, 255, 0, 0.37);
+}
+
+.button0:hover {
+  color: rgba(28, 25, 25, 0.8);
+  background-color: rgba(219, 0, 255, 0.37);
+}
+
+.button1:hover {
+  color: rgba(28, 25, 25, 0.8);
+  background-color:  rgba(0, 255, 56, 0.37);
+}
+
+.button2:hover {
+  color: rgba(28, 25, 25, 0.8);
+  background-color: rgba(0, 194, 255, 0.37);
+}
+
+.button3:hover {
+  color: rgba(28, 25, 25, 0.8);
+  background-color: rgba(219, 255, 0, 0.37);
 }
