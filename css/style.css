@@ -11,6 +11,61 @@ body {
   margin: 0px auto 0px auto;
 }
 
+main {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+article, aside {
+  margin: 30px;
+  font-family: Georgia, Cambria, serif;
+  font-weight: normal;
+  font-size: 1.4em;
+  text-align: left;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bolder;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size: 1.6em;
+  text-shadow: 0px 4px 4px rgba(28, 25, 25, 0.8);
+  -webkit-text-stroke-width: 2px;
+}
+
+h2 {
+  padding-left: 10px;
+  font-size: 1.4em;
+  text-shadow: 0px 2px 2px rgba(28, 25, 25, 0.8);
+  -webkit-text-stroke-width: 1px;
+}
+
+h3 {
+  padding-left: 10px;
+  font-size: 1.2em;
+  text-shadow: 0px 2px 2px rgba(28, 25, 25, 0.8);
+  -webkit-text-stroke-width: 1px;
+}
+
+h4 {
+  padding-left: 10px;
+  font-size: 1.2em;
+  text-shadow: 0px 2px 2px rgba(28, 25, 25, 0.8);
+  -webkit-text-stroke-width: 1px;
+}
+
+th, td {
+  border: solid blue 2px;
+}
+
+/* Header de todas as páginas */
 header {
   position: relative;
 }
@@ -261,20 +316,8 @@ header {
   background-color: rgba(0, 3, 255, 0.37);
 }
 
-main {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-
-article, aside, section {
-  margin: 30px;
-  font-family: Georgia, Cambria, serif;
-  font-weight: normal;
-  font-size: 1.4em;
-  text-align: left;
-}
-
+/* Final do Header de todas as páginas */
+/* Página Index */
 .article_index {
   flex-grow: 3;
 }
@@ -325,6 +368,8 @@ article, aside, section {
   font-size: 1em;
 }
 
+/* Final da página Index */
+/* Página A Música na Nossa História */
 .article_historia {
   display: flex;
   flex-flow: wrap column;
@@ -354,19 +399,24 @@ article, aside, section {
   display: inline;
 }
 
+/* Final da página A Música na Nossa História*/
+/* Página MPB */
 .img_article_mpb {
-float: left;
-margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
 .aside_mpb {
   background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(255, 0, 130, 0.37);
   border-radius: 10px;
   color: white;
   font-size: 1em;
   padding: 10px;
 }
 
+/* Final da página MPB */
+/* Página Nossa Música Hoje */
 .article_hoje {}
 
 .aside_hoje {
@@ -389,13 +439,49 @@ margin-right: 20px;
   border-radius: 5px;
 }
 
+/* Final da página Nossa Música Hoje */
+/* Página Quem Somos */
+.main_quem_somos {
+  display: flex;
+  align-items: flex-start;
+}
+
+.article_quem_somos {
+  flex-shrink: 3;
+  font-size: 1.0em;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_quem_somos {
+  font-size: 2.3em;
+}
+
+.retrato_grupo {
+  display: flex;
+  float: left;
+  flex-flow: wrap column;
+  align-items: center;
+
+}
+
+.foto_grupo {
+  border-radius: 90px;
+}
+
+.section_grupo {
+  display: inline;
+}
+
 .aside_quem_somos {
-  width: 250px;
+  flex-shrink: 2;
+  justify-content: center;
   background-color: rgb(28, 25, 25);
   box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
   border-radius: 10px;
   font-size: 1em;
   padding: 10px;
+  margin: 30px;
   display: flex;
   flex-flow: wrap column;
   align-items: center;
@@ -410,69 +496,8 @@ margin-right: 20px;
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4 {
-  color: white;
-  font-family: verdana, arial, sans-serif;
-  font-weight: bolder;
-  -webkit-text-stroke-color: black;
-  text-transform: uppercase;
-}
-
-h1 {
-  padding-left: 20px;
-  font-size: 1.6em;
-  text-shadow: 0px 4px 4px rgba(28, 25, 25, 0.8);
-  -webkit-text-stroke-width: 2px;
-}
-
-h2 {
-  padding-left: 10px;
-  font-size: 1.4em;
-  text-shadow: 0px 2px 2px rgba(28, 25, 25, 0.8);
-  -webkit-text-stroke-width: 1px;
-}
-
-h3 {
-  padding-left: 10px;
-  font-size: 1.2em;
-  text-shadow: 0px 2px 2px rgba(28, 25, 25, 0.8);
-  -webkit-text-stroke-width: 1px;
-}
-
-h4 {
-  padding-left: 10px;
-  font-size: 1.2em;
-  text-shadow: 0px 2px 2px rgba(28, 25, 25, 0.8);
-  -webkit-text-stroke-width: 1px;
-}
-
-.page_title0 {
-  font-size: 1.8em;
-}
-
-/* .page_title1 {
-  color: rgb(0, 255, 56);
-}
-
-
-.page_title2 {
-  color: rgb(0, 194, 255);
-}
-
-.page_title3 {
-  color: rgb(219, 255, 0);
-}
-
-.page_title4 {
-  color: rgb(255, 15, 0);
-} */
-
-.table_grupo {}
-
-th, td {
-  border: solid blue 2px;
-}
-
+/* Final da página Quem Somos */
+/* Footer de todas as páginas */
 #footer_geral {
   clear: both;
   position: relative;
@@ -565,3 +590,5 @@ small {
 .small_contato {
   color: rgb(6, 93, 184);
 }
+
+/* Final do Footer */
