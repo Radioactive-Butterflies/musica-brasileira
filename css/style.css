@@ -584,7 +584,7 @@ header {
   text-align: center;
 }
 
-.forro_aside_title{
+.forro_aside_title {
   font-size: 0.9em;
 }
 
@@ -622,7 +622,105 @@ header {
   align-items: center;
   text-align: center;
 }
+
 /* Final da página Funk */
+/* Página Samba */
+.samba_main {
+  display: flex;
+  align-items: center;
+}
+
+.samba_figure {
+  flex: 1;
+}
+
+.samba_article {
+  flex: 2;
+  margin: 5px;
+}
+
+.samba_aside {
+  flex: 1;
+  margin-right: 30px;
+  width: auto;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(0, 201, 255, 0.37);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 30px 10px;
+  align-items: center;
+}
+
+.samba_aside_title {
+  text-align: center;
+}
+
+/* Final da página Samba */
+/* Página Sertanejo */
+.sertanejo_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.sertanejo_article {
+  margin-bottom: 0px;
+}
+
+.sertanejo_aside {
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(227, 255, 0, 0.37);
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.sertanejo_aside_title {
+  flex: 100%;
+  text-align: left;
+}
+
+.sertanejo_aside_img {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.sertanejo_aside_ol {
+  flex: 1;
+  margin: 20px;
+}
+
+/* Final da página Sertanejo */
+/* Página Trap */
+.trap_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.trap_article {
+  margin: 25px;
+}
+
+.trap_figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trap_aside {
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.trap_aside_ul {
+  display: flex;
+  flex-flow: nowrap row;
+}
+
+/* Final da página Trap */
 /* Página Quem Somos */
 .quem_somos_main {
   display: flex;
