@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Elementos genéricos que são aplicados em diversas páginas*/
 html {
   background-color: rgb(92, 92, 92);
 }
@@ -27,7 +28,7 @@ article, aside {
 
 h1, h2, h3, h4 {
   color: white;
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: bolder;
   -webkit-text-stroke-color: black;
   text-transform: uppercase;
@@ -61,10 +62,26 @@ h4 {
   -webkit-text-stroke-width: 1px;
 }
 
-th, td {
-  border: solid blue 2px;
+.img_comum {
+  border-radius: 5px;
 }
 
+.referencia {
+  font-size: 0.6em;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.li_ref {
+  display: inherit;
+}
+
+.fonte_button {
+  display: inherit;
+}
+
+/* Fim dos elementos genéricos*/
 /* Header de todas as páginas */
 header {
   position: relative;
@@ -92,7 +109,7 @@ header {
   width: 200px;
   height: 40px;
   color: rgb(241, 239, 229);
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.9em;
   text-align: center;
@@ -176,7 +193,7 @@ header {
   width: 170px;
   height: 35px;
   color: rgb(241, 239, 229);
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.8em;
   text-align: center;
@@ -237,7 +254,7 @@ header {
   width: 130px;
   height: 35px;
   color: rgb(241, 239, 229);
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.8em;
   text-align: center;
@@ -318,51 +335,42 @@ header {
 
 /* Final do Header de todas as páginas */
 /* Página Index */
-.article_index {
-  flex-grow: 3;
+.index_article {
+  flex: 7;
 }
 
-.img_generica1 {
+.index_img_generica1 {
   float: left;
   margin-right: 20px;
   border-radius: 5px;
 }
 
-.img_generica2 {
+.index_img_generica2 {
   float: right;
   margin-left: 20px;
   border-radius: 5px;
 }
 
-.referencia {
-  font-size: 0.6em;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-}
-
-.li_ref {
-  display: inherit;
-}
-
-.fonte_button {
-  display: inherit;
-}
-
-.aside_index {
+.index_aside {
+  flex: 3;
   background-color: rgb(28, 25, 25);
   box-shadow: 4px 5px 5px rgba(255, 0, 0, 0.37);
   border-radius: 10px;
 }
 
-.ul_aside_index {
+.index_aside_title {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.index_ul_aside {
   display: flex;
   flex-flow: wrap column;
   align-items: center;
   padding-right: 40px;
 }
 
-.li_aside_index {
+.index_li_aside {
   display: inherit;
   color: white;
   font-size: 1em;
@@ -370,23 +378,22 @@ header {
 
 /* Final da página Index */
 /* Página A Música na Nossa História */
-.article_historia {
+.historia_article {
+  flex: 7;
   display: flex;
   flex-flow: wrap column;
   align-items: center;
 }
 
-.img_article_historia {
-  display: inherit;
-}
-
-.aside_historia {
+.historia_aside {
+  flex: 6;
+  padding: 20px;
   background-color: rgb(28, 25, 25);
   box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
   border-radius: 10px;
 }
 
-.section_aside_historia {
+.historia_section_aside {
   color: white;
   font-size: 0.9em;
   padding: 10px;
@@ -395,36 +402,78 @@ header {
   align-items: center;
 }
 
-.div_aside_historia {
+.historia_div_aside {
   display: inline;
 }
 
 /* Final da página A Música na Nossa História*/
 /* Página MPB */
-.img_article_mpb {
-  float: left;
-  margin-right: 20px;
+.mpb_article {
+  flex: 7;
 }
 
-.aside_mpb {
+.mpb_img_article {
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.mpb_aside {
+  flex: 3;
   background-color: rgb(28, 25, 25);
   box-shadow: 4px 5px 5px rgba(255, 0, 130, 0.37);
   border-radius: 10px;
   color: white;
   font-size: 1em;
-  padding: 10px;
+  padding: 20px;
+}
+
+.mpb_aside_title {
+  font-size: 1.8em;
 }
 
 /* Final da página MPB */
-/* Página Nossa Música Hoje */
-.article_hoje {}
+/* Página Folclórica*/
+.folclorica_main {
+  display: flex;
+  flex-direction: column;
+}
 
-.aside_hoje {
-  background-color: rgb(28, 25, 25);
-  border-radius: 10px;
+.folclorica_section {
+  margin: 15px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+.folclorica_section_title {
+  flex: 100%;
+  padding-left: 20px;
+}
+
+.folclorica_sub_section {
+  flex: 20%;
   color: white;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
+  border-radius: 10px;
+  font-family: Georgia, Cambria, serif;
+  font-weight: normal;
   font-size: 1em;
-  padding: 10px;
+  text-align: left;
+}
+
+/* Final da página Folclórica */
+/* Página Nossa Música Hoje */
+.hoje_main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hoje_article {
+  flex: 7;
 }
 
 .img_generica3 {
@@ -439,21 +488,155 @@ header {
   border-radius: 5px;
 }
 
+.hoje_aside {
+  flex: 5;
+  height: 100%;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(136, 45, 85, 0.8);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hoje_table {
+  border-collapse: collapse;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.hoje_table_th, .hoje_table_td {
+  height: 40px;
+  width: 125px;
+  border: solid white 1px;
+}
+
+.hoje_table_th {
+  font-size: 1em;
+  color: rgb(28, 25, 25);
+  background-color: white;
+}
+
+.hoje_table_td {
+  font-size: 0.6em;
+}
+
 /* Final da página Nossa Música Hoje */
+/* Página Choro */
+.choro_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  grid-gap: 0px;
+}
+
+.choro_article {
+  flex: 5;
+}
+
+.choro_figure {
+  flex: 2;
+}
+
+.choro_aside {
+  flex: 5;
+  margin-left: 0px;
+  height: 100%;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(255, 0, 130, 0.37);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 30px 10px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Final da página Choro */
+/* Página Forró */
+.forro_main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  grid-gap: 0px;
+}
+
+.forro_article {
+  flex: 7;
+}
+
+.forro_figure {
+  flex: 2;
+}
+
+.forro_aside {
+  flex: 5;
+  margin-right: 0px;
+  height: 100%;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(0, 255, 156, 0.37);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 30px 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.forro_aside_title{
+  font-size: 0.9em;
+}
+
+/* Final da página Forró */
+/* Página Funk */
+.funk_main {
+  display: flex;
+  flex-direction: row;
+}
+
+.funk_article {
+  flex: 2;
+}
+
+.funk_aside {
+  flex: 3;
+  display: flex;
+  flex-flow: wrap row;
+  height: 100%;
+}
+
+.funk_aside_title {
+  flex: 100%;
+}
+
+.funk_div {
+  flex: 1;
+  margin: 10px;
+  width: auto;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(255, 184, 0, 0.37);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 30px 10px;
+  align-items: center;
+  text-align: center;
+}
+/* Final da página Funk */
 /* Página Quem Somos */
-.main_quem_somos {
+.quem_somos_main {
   display: flex;
   align-items: flex-start;
 }
 
-.article_quem_somos {
+.quem_somos_article {
   flex-shrink: 3;
   font-size: 1.0em;
   display: flex;
   flex-direction: column;
 }
 
-.title_quem_somos {
+.quem_somos_title {
   font-size: 2.3em;
 }
 
@@ -462,7 +645,6 @@ header {
   float: left;
   flex-flow: wrap column;
   align-items: center;
-
 }
 
 .foto_grupo {
@@ -473,7 +655,7 @@ header {
   display: inline;
 }
 
-.aside_quem_somos {
+.quem_somos_aside {
   flex-shrink: 2;
   justify-content: center;
   background-color: rgb(28, 25, 25);
@@ -487,9 +669,9 @@ header {
   align-items: center;
 }
 
-.contato {
+.link_para_contato {
   color: rgb(136, 45, 85);
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-size: 0.8em;
   font-weight: bolder;
   text-decoration: overline;
@@ -497,6 +679,71 @@ header {
 }
 
 /* Final da página Quem Somos */
+/* Página Contato */
+.contato_article {
+  display: flex;
+}
+
+.contato_div {
+  flex: 1;
+}
+
+.contato_form {
+  flex: 1;
+  background-color: rgb(28, 25, 25);
+  box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contato_fieldset {
+  font-family: Georgia, Cambria, serif;
+  background-color: rgb(28, 25, 25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato_legend {
+  color: white;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bolder;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+.contato_campo {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 2px rgba(0, 3, 255, 0.37);
+  border-radius: 5px;
+}
+
+.contato_mensagem {
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 2px rgba(0, 3, 255, 0.37);
+  border-radius: 5px;
+}
+
+.contato_button {
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.contato_button:hover {
+  color: white;
+  background-color: rgba(0, 3, 255, 0.37);
+  box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
+}
+
+/* Final da página Contato */
 /* Footer de todas as páginas */
 #footer_geral {
   clear: both;
@@ -518,7 +765,7 @@ header {
   position: relative;
   left: 180px;
   padding-left: 20px;
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: bolder;
   font-size: 1.4em;
   color: white;
@@ -543,7 +790,7 @@ header {
 }
 
 .button_foot {
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: normal;
   font-size: 1.1em;
   font-weight: bolder;
@@ -580,7 +827,7 @@ small {
 #copyright {
   color: white;
   padding-left: 20px;
-  font-family: verdana, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.8em;
   text-decoration: none;
