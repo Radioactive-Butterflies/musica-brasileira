@@ -382,7 +382,11 @@ header {
   flex: 7;
   display: flex;
   flex-flow: wrap column;
-  align-items: center;
+}
+
+.img_comum_historia {
+  margin: auto;
+  border-radius: 5px;
 }
 
 .historia_aside {
@@ -466,6 +470,23 @@ header {
 }
 
 /* Final da página Folclórica */
+/* Página Ditadura Militar */
+.militar_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.militar_aside {
+  margin: 15px;
+  border-radius: 10px;
+  border-left: solid gray 1px;
+  border-top: solid gray 1px;
+  box-shadow: 4px 5px 5px rgba(0, 255, 156, 0.37);
+  background-color: #FFFAFA;
+  justify-content: space-around;
+}
+
+/* Final da página Ditadura Militar */
 /* Página Ícones */
 .icones_article {
   display: flex;
