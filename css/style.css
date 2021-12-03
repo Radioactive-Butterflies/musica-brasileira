@@ -466,6 +466,34 @@ header {
 }
 
 /* Final da página Folclórica */
+/* Página Ícones */
+.icones_article {
+  display: flex;
+  flex-direction: column;
+}
+
+.icones_section_ul {
+  display: flex;
+  flex-flow: wrap row;
+  grid-gap: 20px;
+}
+
+.icones_section_li {
+  flex: 0.5;
+  margin: 5px;
+  border-radius: 10px;
+  border-left: solid gray 1px;
+  border-top: solid gray 1px;
+  box-shadow: 4px 5px 5px rgba(0, 3, 255, 0.37);
+  background-color: #FFFAFA;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Final da página Ícones */
 /* Página Nossa Música Hoje */
 .hoje_main {
   display: flex;
