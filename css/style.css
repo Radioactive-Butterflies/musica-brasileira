@@ -637,11 +637,11 @@ header {
   color: white;
   padding: 10px 10px 30px 10px;
   align-items: center;
-  text-align: center;
 }
 
 .forro_aside_title {
-  font-size: 0.9em;
+  font-size: 1em;
+  text-align: center;
 }
 
 /* Final da página Forró */
@@ -677,6 +677,11 @@ header {
   padding: 10px 10px 30px 10px;
   align-items: center;
   text-align: center;
+}
+
+.funk_div_ul {
+  list-style: square;
+  text-align: left;
 }
 
 /* Final da página Funk */
@@ -773,7 +778,12 @@ header {
 
 .trap_aside_ul {
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: wrap row;
+}
+
+.trap_aside_li {
+  flex: 50%;
+  margin: auto;
 }
 
 /* Final da página Trap */
